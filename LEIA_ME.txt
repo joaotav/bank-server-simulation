@@ -1,0 +1,62 @@
+Sistemas Distribuídos - Trabalho 1 
+Sistema de Transações Financeiras
+Aluno: João Otávio Chervinski
+----------------------------------
+
+
+-> Contas existentes:
+----------------------------------
+Banco: America
+Agência: 1
+Conta: 100
+----------------------------------
+Banco: America
+Agência: 1
+Conta: 101
+----------------------------------
+Banco: America
+Agência: 2
+Conta: 100
+----------------------------------
+Banco: America
+Agência: 2
+Conta: 101
+----------------------------------
+Banco: Banrisul
+Agência: 1
+Conta: 100
+----------------------------------
+Banco: Banrisul
+Agência: 1
+Conta: 101
+----------------------------------
+Banco: Banrisul
+Agência: 2
+Conta: 100
+----------------------------------
+Banco: Banrisul
+Agência: 2
+Conta: 101
+----------------------------------
+
+-> Títulos:
+----------------------------------
+ID: 1123 - Não pago
+----------------------------------
+ID: 1124 - Não pago
+----------------------------------
+ID: 2123 - Não pago
+----------------------------------
+ID: 2124 - Já foi pago
+----------------------------------
+
+# Exemplo de uso
+
+# OBS: Os servidores de dados rodam nas portas 5001 - 5004
+
+term1: python2.7 data_server.py
+
+term2: python2.7 application_server.py -p 5000
+
+term3: python2.7 transaction_client.py -i 127.0.0.1 -p 5000
+

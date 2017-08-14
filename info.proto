@@ -1,0 +1,20 @@
+message Operation{
+ required string type=1;
+ optional int32 account=2;
+ optional int32 agency=3;
+ optional string bank=4;
+ optional string destBank=5;
+ optional int32 destAgency=6;
+ optional int32 destAccount=7;
+ optional int32 id=8;
+ optional int32 interest=9;
+ optional string expiryDate=10;
+ optional string timestamp=11;
+ optional int32 paid=12;
+
+}
+
+
+message Amount {
+ required int32 amount=1;
+}
